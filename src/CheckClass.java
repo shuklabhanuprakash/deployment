@@ -10,7 +10,7 @@ public class CheckClass {
 		c.getName(s, i);
 	}
 
-	private void getName(String s, int i) {
+	private void getName(String s, Integer i) {
 		System.out.println("NAME : " + s);
 		System.out.println("ID : " + i);
 	}
