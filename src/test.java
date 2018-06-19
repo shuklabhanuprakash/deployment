@@ -15,9 +15,11 @@ public class test {
 		} else {
 			for (int i = 0; i < endingString.length(); i++) {
 				try {
+					
+					System.out.println(endingString.substring(0, i) +"  -----   "+endingString.substring(i + 1));
 					String newString = endingString.substring(0, i)
 							+ endingString.substring(i + 1);
-
+System.out.println("00=====  "+newString);
 					permuteString(beginningString + endingString.charAt(i),
 							newString);
 				} catch (StringIndexOutOfBoundsException exception) {
@@ -28,8 +30,8 @@ public class test {
 	}
 
 	public static void main(String[] args) {
-		permuteString("", "ABCD");
-		print(100);
+		permuteString("", "ABC");
+	//	print(100);
 		/*
 		 * int c = 1; for (int i = 1; i < 10; i++) { for (int j = 1; j < i; j++)
 		 * { System.out.print(c + " "); c++; } System.out.println(); }
@@ -69,7 +71,7 @@ public class test {
 
 		// int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
 		// System.out.println(Arrays.toString(cyclic(a, -2)));
-
+/*
 		MyClass myClass = new MyClass();
 		MyClass w = myClass;
 		System.out.println(myClass);
@@ -80,7 +82,7 @@ public class test {
 		System.out.println(myClass);
 		myClass.data = 8976;
 		System.out.println(myClass);
-		System.out.println(w);
+		System.out.println(w);*/
 	}
 
 	private static int[] cyclic(int[] a, int i) {

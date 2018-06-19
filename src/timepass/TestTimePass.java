@@ -9,7 +9,10 @@ public class TestTimePass {
 		String s = s2.intern();// new String("ABC");
 		String s1 = "ABC";
 		String s4 = "ABC";
-		// System.out.println(s1.hashCode());
+		
+		TestTimePass t =new TestTimePass();
+		 System.out.println(t.hashCode());
+		 System.out.println(System.identityHashCode(t));
 		System.out.println(System.identityHashCode(s));
 		System.out.println(System.identityHashCode(s2));
 		System.out.println(System.identityHashCode(s1));

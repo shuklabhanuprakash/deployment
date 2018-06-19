@@ -8,10 +8,10 @@ public class MatrixZeros {
 
 	public static void main(String[] args) {
 
-		 findDistance();
-		String str = "azzzeeeefffmtttadd";
-		firstNonRepetative(str);
-		firstNonRepetativeMap(str);
+		findDistance();
+		//String str = "azzzeeeefffmtttadd";
+	//	firstNonRepetative(str);
+		//firstNonRepetativeMap(str);
 	}
 
 	private static void firstNonRepetativeMap(String str) {

@@ -5,8 +5,30 @@ import java.util.Scanner;
 public class DataType {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		/*Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
+		dataTypeTest(sc, n);*/
+		String str ="52365559";
+		convertStringToInt(str);
+		
+		
+		
+	}
+
+	private static void convertStringToInt(String str) {
+		char c =(int)'0';
+		int val=0;
+		for(int i=0;i<str.length();i++) {
+			
+			val = val*10 + Math.abs((int)str.charAt(i) - c);
+			
+		}
+		System.out.println(val);
+		
+		
+	}
+
+	private static void dataTypeTest(Scanner sc, int n) {
 		for (int i = 0; i < n; i++) {
 			try {
 				long x = sc.nextLong();

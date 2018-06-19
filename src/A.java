@@ -5,13 +5,13 @@ import java.util.Map;
 
 public class A {
 	@SuppressWarnings("null")
-	int GetValue() {
+	static Integer GetValue() {
 		return (true ? null : 0);
 	}
 
-	/*
-	 * public void f1(Integer i) { System.out.println("inside 1"); }
-	 */
+	
+	  public void f1(Integer i) { System.out.println("inside 1"); }
+	 
 
 	public void f1(int i) {
 		System.out.println("inside 2");
@@ -56,7 +56,7 @@ public class A {
 	}
 
 	public static void main(String[] args) {
-
+		GetValue();
 		A a1 = new SubClass();
 		a1.f1(new Integer(89));
 
@@ -108,22 +108,27 @@ public class A {
 		System.out.println(secondHighest);
 		System.out.println(" highest");
 		System.out.println(highest);
-
-		// sort("Bbttggbbhanunn");
+		squareRoot(625);
+		try {
+			removeDuplicate("zBbttggbbhanunn");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private static void squareRoot(int n) {
-		for (int i = 1; i < n / 2; i++) {
+		for (int i = 1; i <= n / 2; i++) {
 			if (i * i == n) {
-				System.out.println("Square Root of n :-" + i);
+				System.out.println("Square Root of n : " + i);
 				break;
 			}
 		}
 
 	}
 
-	private static void sort(String string) throws Exception {
-		if(null == string && string.isEmpty()){
+	private static void removeDuplicate(String string) throws Exception {
+		if(null == string || string.isEmpty()){
 			throw new Exception("Illegal parameter");
 		}
 		

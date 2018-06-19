@@ -22,13 +22,13 @@ public class RemoveChar {
 		// List<Integer> l2 = new ArrayList<Integer>();
 		for (int i : ar) {
 
-			if (map.containsKey(i)) {
-				list.add(i);
+			if (!map.containsKey(i)) {
+				map.put(i, -1);
 			}
-			map.put(i, 2);
+			
 		}
 		// list.addAll(l2);
-		System.out.println(list);
+		System.out.println(map);
 
 	}
 

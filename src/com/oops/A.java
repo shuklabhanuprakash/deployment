@@ -9,4 +9,10 @@ public class A implements Comparable<A> {
 		return 0;
 	}
 
+	@Override
+	public String toString() {
+		return "A []";
+	}
+
+	
 }

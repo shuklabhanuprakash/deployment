@@ -7,9 +7,9 @@ public class BalanceBracketFinder {
 
 	public static void main(String[] args) throws Exception {
 	
-		String s="()[{{(){}}}()]";
+		String s="()[{{(){}}}{}()]";
 		
-		System.out.println(isBalanced(s));
+	System.out.println(isBalanced(s));
 		 //String input=sc.next();
 		 /*   while(s.length() != (s = s.replaceAll("\\(\\)|\\[\\]|\\{\\}", "")).length());
 		    System.out.println(s.isEmpty());

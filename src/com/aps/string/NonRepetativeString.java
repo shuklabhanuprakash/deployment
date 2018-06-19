@@ -13,7 +13,7 @@ public class NonRepetativeString {
 		String str = "sojsxjABCAABBCsxcZDD";
 		// System.out.println(getNonRepetativeCharater(str));
 		// getNonRepetativeFromSet(str);
-		getNonRepetaticCharacterUsingFor(str);
+		getNonRepetaticCharacterUsingFor("XABLAB");
 
 	}
 

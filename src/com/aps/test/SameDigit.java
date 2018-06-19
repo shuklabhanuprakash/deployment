@@ -15,8 +15,8 @@ public class SameDigit {
 		 * for (int i = 0; i < 12; i++) { if (i == 8) { break; }
 		 * System.out.print(i); }
 		 */
-		getHigherNumber(arr);
-		// System.out.println(getGreatorNumber(arr));
+		//getHigherNumber(arr);
+		 System.out.println(getGreatorNumber(arr));
 	}
 
 	private static String getGreatorNumber(int[] arr) {
@@ -25,7 +25,7 @@ public class SameDigit {
 		int switchIndex = -1;
 		String output = "";
 		for (int i = arr.length - 1; i >= 0; i--) {
-			if (arr[i - 1] > arr[i] && i > 0) {
+			if (arr[i - 1] < arr[i] && i > 0) {
 				index = i - 1;
 
 				for (int j = index + 1; j < arr.length; j++) {

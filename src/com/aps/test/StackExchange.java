@@ -16,15 +16,22 @@ public class StackExchange {
 	 */
 	public String push(Object objArr) {
 		if (isFull()) {
-			return "Stack is Full";
+			try {
+				throw new Exception("STACK is Full");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}else {
+			objArray[++topOfStack] = objArr;
 		}
 
-		objArray[++topOfStack] = objArr;
-		return "Element Added";
+		return "Added";
 	}
 
 	public boolean isFull() {
-		return topOfStack == objArray.length;
+		return topOfStack == (objArray.length -1);
 	}
 
 	public boolean isEmpty() {
@@ -65,7 +72,7 @@ public class StackExchange {
 
 		System.out.println("GOING TO POP ARRAY");
 		System.out.println(exchange.topOfStack);
-		for (int i = 0; i <= 2; i++) {
+		for (int i = 0; i <= 9; i++) {
 			System.out.print(exchange.pop() + "-Popped ");
 		}
 		System.out.println();

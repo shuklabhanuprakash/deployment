@@ -9,6 +9,6 @@ public class TriangleCoins {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(calculateHeight(3));
+		System.out.println(calculateHeight(4));
 	}
 }

@@ -9,7 +9,7 @@ public class Tester {
 		l.add(test);
 		test.id = 23;
 		System.out.println(test);
-		test = new Test2(2, "B");
+		test = null;
 		System.out.println(l.get(0));
 	}
 

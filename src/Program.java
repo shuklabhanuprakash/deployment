@@ -18,7 +18,7 @@ public class Program {
 		Collections.sort(list, Collections.reverseOrder());
 		System.out.println(list);
 		
-		matrix();
+		//matrix();
 		/*
 		 * Boolean isRun = true; while (isRun) {
 		 * System.out.println("ENTER NUMBER"); Scanner sc = new
@@ -31,11 +31,12 @@ public class Program {
 		 *
 		 * }
 		 */
-		/*
-		 * String str = "{("; // matrix(); if (validExp(str)) {
-		 * System.out.println("Valid Expression"); } else {
-		 * System.out.println("Invalid Expression"); }
-		 */
+		
+		 String str = "{()"; 
+		 if (validExp(str)) {
+		 System.out.println("Valid Expression"); } else {
+		  System.out.println("Invalid Expression"); }
+		 
 	}
 
 	/**
