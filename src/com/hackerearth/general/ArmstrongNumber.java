@@ -4,8 +4,23 @@ public class ArmstrongNumber {
 
 	public static void main(String[] args) {
 	 
-		checkArmsStrong(153);
+		checkArmsStrong(370);
+		checkArmsStrongInt(370);
 
+	}
+
+	private static void checkArmsStrongInt(int num) {
+		int sum =0;
+		int i = num;
+		while(i > 0) {
+			 int remain = i%10;
+			 sum +=remain*remain*remain;
+			 i = i/10;
+		  
+		}
+		
+		if(sum == num)
+		System.out.println(sum);
 	}
 
 	private static void checkArmsStrong(int n) {

@@ -9,13 +9,13 @@ public class SameDigit {
 	 */
 	public static void main(String[] args) {
 
-		int[] arr = { 2, 4, 6, 7, 1, 4, 9, 8, 5 };
+		int[] arr = { 2, 4, 6, 7, 1, 7, 9, 8, 5 };
 
 		/*
 		 * for (int i = 0; i < 12; i++) { if (i == 8) { break; }
 		 * System.out.print(i); }
 		 */
-		//getHigherNumber(arr);
+		getHigherNumber(arr);
 		 System.out.println(getGreatorNumber(arr));
 	}
 
@@ -64,11 +64,12 @@ public class SameDigit {
 
 			for (int j = i - 1; j >= 0; j--) {
 				if (a[j] < a[i]) {
-					a[i] = a[i] + a[j];
-					a[j] = a[i] - a[j];
-					a[i] = a[i] - a[j];
+					int temp1 =a[i];
+					a[i]=a[j];
+					a[j]=temp1;
+					
 					System.arraycopy(a, j, temp, j, a.length - j);
-					Arrays.sort(temp);
+					Arrays.sort(temp,j+1,a.length);
 					System.arraycopy(a, 0, temp, 0, j);
 					System.out.println(Arrays.toString(temp));
 					break label;

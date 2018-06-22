@@ -1,6 +1,7 @@
 public class TriangleCoins {
 	public static double calculateHeight(int noOfCoins) {
 		double res = ((-1 + (Math.sqrt(1 + 8 * noOfCoins))) / 2);
+		System.out.println(res);
 		while ((res - Math.floor(res) > 0)) {
 			res = ((-1 + (Math.sqrt(1 + 8 * noOfCoins))) / 2);
 			noOfCoins--;

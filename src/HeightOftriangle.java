@@ -1,6 +1,6 @@
 public class HeightOftriangle {
 	public static void main(String args[]) {
-		int height = calculateHeight(4);
+		int height = calculateHeight(10);
 		System.out.println(height);
 	}
 
